@@ -20,7 +20,8 @@ nav {
     padding: 2vw 10vw;
     justify-content: space-between;
     height: 12vh;
-    z-index: 11;
+    z-index: 12;
+    background-color: #111;
 }
 
 nav h1 {
@@ -190,28 +191,123 @@ nav button svg {
     z-index: 2;
 }
 
-
-
-
-
-
-
 #page2 {
     height: 100vh;
     width: 100%;
     background-color: #111;
     position: relative;
-    padding: 2vw 11vw;
+    padding: 0 10vw;
+    padding-bottom: 8vw;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    border-top: 1px solid #333;
 }
 
 #page2-left {
     height: 100%;
-    width: 50%;
-    background-color: #333;
+    width: 40%;
+    /* background-color: #333; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3vw 0;
+}
 
+#page2-left p {
+    font-size: 1vw;
+}
+
+#page2-left h5 {
+    font-size: 1.2vw;
+    font-weight: 500;
+    width: 70%;
 }
 
 #page2-right {
     height: 100%;
-    width: 50%;
+    width: 55%;
+    /* background-color: #333; */
+}
+
+.right-elem {
+    position: relative;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+    border-bottom: 1px solid #333;
+}
+
+.right-elem h2 {
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.right-elem img {
+    height: 6vw;
+    width: 6vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    scale: 0;
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url("/assets/pg3cover.webp");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vw;
+}
+
+.page3-center .icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 3.5vw;
+    color: black;
+}
+
+.page3-center h5 {
+    font-size: 0.8vw;
+    font-weight: 700;
+    padding: 8px 13px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    margin-top: 1vw;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateY(10%);
+    transition: all ease 0.5s;
+}
+
+.page3-center:hover h5{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+#page3 video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scaleX(0.7) scaleY(0);
+    border-radius: 30px;
+    opacity: 0;
+    z-index: 100;
 }
