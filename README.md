@@ -2,7 +2,7 @@ Certainly! Here's an improved version of the README.md file:
 
 ---
 
-# Web Page Animation Demo
+# Agency Website Frontend
 
 This repository showcases a collection of interactive animations for web pages, implemented using JavaScript and CSS libraries such as GSAP (GreenSock Animation Platform) and Locomotive Scroll. These animations are designed to enhance user experience and engagement on web pages.
 
